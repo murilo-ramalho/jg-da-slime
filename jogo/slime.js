@@ -1,4 +1,10 @@
-const scene, camera, renderer, animate;
+//variaveis do jg
+const scene;
+const camera;
+const renderer;
+const animate;
+
+//jg
 scene = new THREE.scene();
 camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 renderer = new THREE.WebGLRenderer();
@@ -14,4 +20,6 @@ animate = function () {
     renderer.render( scene, camera );
 };
 
+
+//inicio
 animate();
