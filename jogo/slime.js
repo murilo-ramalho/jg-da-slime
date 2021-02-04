@@ -5,7 +5,8 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 document.body.style.margin = "0"
-const animate = function () {
+camera.position.z = 5
+const animate = function() {
     requestAnimationFrame( animate );
 
 
