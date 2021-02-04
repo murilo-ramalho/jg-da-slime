@@ -1,4 +1,4 @@
-# slime-jg
+# jogo da slime
 
 fazendo meu primeiro jogo com java script e a biblioteca [THREE.js](https://github.com/mrdoob/three.js/)
 
