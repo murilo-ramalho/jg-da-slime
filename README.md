@@ -1,5 +1,5 @@
-# jogo da slime
+# jogo da ilha
 
 fazendo meu primeiro jogo com java script e a biblioteca [THREE.js](https://github.com/mrdoob/three.js/)
 
-esse jogo tem o protagonista tem o dever de limpa sua terra natal de uma invasão de slimes que vieram do fundo do mar
+esse jogo o protagonista está preso em uma ilha lógo após escapar de um desmoronamento em um tunel da terra oca
