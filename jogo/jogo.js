@@ -15,9 +15,6 @@ camera.position.z = 10;
 function animate() {
     requestAnimationFrame(animate);
 
-        if(sol.position.y > 5) {
-            sol.position.y -= 1;
-        }
 
     renderer.render(scene,camera);
 }
@@ -53,6 +50,18 @@ function mover(event) {
                 break;
         }
 };
+function mapa(e) {
+    e = Math.floor(10*Math.random())
+    if (e==1) {
+        scene.add(arvore);
+    } else {
+        scene.add(pedra);
+        
+    }
+    
 
+}
+
+mapa(e);
 //inicio do movimento
 animate();;

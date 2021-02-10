@@ -1,5 +1,5 @@
 //chão
-const geometria = new THREE.BoxGeometry(1000, 1, 1000);
+const geometria = new THREE.BoxGeometry(500, 1, 500);
 const materialchao = new THREE.MeshBasicMaterial({color:0x006400});
 const chao = new THREE.Mesh(geometria, materialchao);
 scene.add(chao);
@@ -42,3 +42,35 @@ const matsol = new THREE.MeshBasicMaterial({color:0xFFFF00});
 const sol = new THREE.Mesh(geosol, matsol);
 scene.add(sol);
 sol.position.y += 100;
+
+//arvore
+const geotronco = new THREE.CylinderGeometry( 1, 1, 10, 50 );
+const Mtronco = new THREE.MeshBasicMaterial( {color: 0xA0522D} );
+const tronco = new THREE.Mesh( geotronco, Mtronco );
+scene.add( tronco );
+tronco.position.x = 20;
+tronco.position.z = 10;
+
+const verticesfolhas = [
+    -1,-1,-1,    1,-1,-1,    1, 1,-1,    -1, 1,-1,
+    -1,-1, 1,    1,-1, 1,    1, 1, 1,    -1, 1, 1,
+];
+
+const indicesfolhas = [
+    2,1,0,    0,3,2,
+    0,4,7,    7,3,0,
+    0,1,5,    5,4,0,
+    1,2,6,    6,5,1,
+    2,3,7,    7,6,2,
+    4,5,6,    6,7,4
+];
+const geofolhas = new THREE.PolyhedronGeometry( verticesfolhas, indicesfolhas, 6, 2 );
+const mfolhas = new THREE.MeshBasicMaterial({color:0x32CD32});
+const folhas = new THREE.Mesh(geofolhas, mfolhas);
+scene.add(folhas);
+folhas.position.x = 20;
+folhas.position.z = 10;
+folhas.position.y = 10;
+
+let arvore = {base:tronco,folha:folhas}
+let pedra = {part1:geometria1,part2:geometria2,part3:geometria3}
