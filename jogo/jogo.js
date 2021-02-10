@@ -50,18 +50,6 @@ function mover(event) {
                 break;
         }
 };
-function mapa(e) {
-    e = Math.floor(10*Math.random())
-    if (e==1) {
-        scene.add(arvore);
-    } else {
-        scene.add(pedra);
-        
-    }
-    
 
-}
-
-mapa(e);
 //inicio do movimento
 animate();;
