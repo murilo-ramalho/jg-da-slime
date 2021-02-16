@@ -16,6 +16,7 @@ function animate() {
     requestAnimationFrame(animate);
 
 
+    
     renderer.render(scene,camera);
 }
 document.addEventListener("keydown", mover);
